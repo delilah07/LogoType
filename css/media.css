@@ -1,0 +1,117 @@
+/* tablet */
+@media screen and (max-width: 1028px) {
+    h4.services__item-title{
+        height: 48px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .services__items, .news__inner{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .services__item {
+        max-width: 360px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .advantages__item-title{
+        height: 72px;
+    }
+    .news {
+        padding: 65px 0 50px 0;
+    }
+    .news__blog{
+        margin-top: 70px;
+    }
+    .news__slider, .news__blog, .consultation__form{
+        width: 100%;
+    }
+    .news .slick-next {
+        right: 0;
+        transform: translateY(-40px);
+    }
+    .news .slick-prev {
+        left: 100%;
+        transform: translate(-100px, -40px);
+    }
+    .consultation__photo, .footer__top-contact h4, .footer__top-contact p{
+        display: none;
+    }
+    .footer__top-contact {
+        min-width: 250px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .header__top-inner, .section__top{
+        flex-wrap: wrap;
+    }
+    .header__top-inner{
+        justify-content: space-around;
+    }
+    .header__nav, .menu-close{
+        display: none;
+    }
+    .header__main {
+        padding: 10px 0;
+        position: relative;
+    }
+    .burger-menu{
+        display: block;
+        font-size: 20px;
+        line-height: 20px;
+        position: relative;
+        width: 17px;
+    }
+    .burger-menu .menu-close{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-50%);
+    }
+    .header__nav{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 10;
+    }
+    .header__nav ul{
+        flex-direction: column;
+    }
+    .section__top div{
+        margin-top: 20px;
+    }
+    .services__item, .advantages__item{
+        width: 100%;
+        max-width: 800px;
+    }
+    .advantages__inner{
+        flex-wrap: wrap;
+    }
+    
+    h4.services__item-title, p.services__item-text, .advantages__item-title{
+        height: auto;
+    }
+    p.services__item-text{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .slick-prev {
+        left: 5%;
+    }
+    .slick-next {
+        right: 5%;
+    }
+    .footer__top-contact{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .footer__top-map{
+        display: none;
+    }
+}
